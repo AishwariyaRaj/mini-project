@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    margin: 0;
+    flex-direction: column;
+    padding:20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-container {
+        text-align: center;
+        background: #fafdff; /* Soft Peach */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(255, 49, 139, 0.5); /* Glowing effect */
+        transition: 0.3s ease-in-out;
+        width:90%;
+        max-width:500px;
+}
+#start-container:hover {
+    box-shadow: 0px 6px 16px rgba(49, 104, 255, 0.7); /* Brighter glow on hover */
+}
+
+
+.quiz-container, #result {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: white;
+}
+#start-btn {
+    background: #54d9de; /* Soft Mint */
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#start-btn:hover {
+    background: #54d9de;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #start-container, .quiz-container, #result {
+        width: 95%;
+    }
+
+    #start-btn {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+/* JavaScript Quiz Title */
+#quiz-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Next Button */
+#next-btn {
+    background: #145b99; /* Orange */
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#next-btn:hover {
+    background: rgb(22, 164, 252);
+    transform: scale(1.05);
+}
+
+/* Restart & Score Buttons */
+#restartQuiz, #showScore {
+    background: #54d9de; /* Soft Mint */
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 4px 12px rgba(49, 104, 255, 0.5); /* Glowing effect */
+}
+
+#restartQuiz:hover, #showScore:hover {
+    background: #54d9de;
+    transform: scale(1.05); /* Slight enlargement on hover */
+    box-shadow: 0px 6px 16px rgba(49, 104, 255, 0.7); /* Brighter glow on hover */
+}
